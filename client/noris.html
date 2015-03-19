@@ -1,0 +1,124 @@
+<head>
+  <title>btfu</title>
+</head>
+
+<body>
+  <div class="navegacion">
+    {{> nav}}
+  </div>
+
+  <div class="container bandas" style="background-color:rgba(0, 0, 0, 0.4);">
+    <div class="banda">
+      {{> banda }}
+    </div>
+  </div>
+
+  <div class="pie">
+    {{> player}}
+  </div>
+
+
+
+</body>
+
+<template name="nav">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">playerBTFU</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Cartel</a></li>
+          <li><a href="#about">Ranking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<template name="player">
+  <footer class="footer  navbar-fixed-bottom">
+    <div class="buttons container">
+      <button type="button" class="btn btn-default button-skip-backward">
+        <span class="glyphicon glyphicon-fast-backward"></span>
+      </button>
+      <button type="button" class="btn btn-default button-pause">
+        <span class="glyphicon glyphicon-pause"></span>
+      </button>
+      <button type="button" class="btn btn-default button-stop">
+        <span class="glyphicon glyphicon-stop"></span>
+      </button>
+      <button type="button" class="btn btn-default button-play">
+        <span class="glyphicon glyphicon-play"></span>
+      </button>
+      <button type="button" class="btn btn-default button-skip-forward">
+        <span class="glyphicon glyphicon-fast-forward"></span>
+      </button>
+      <button type="button" class="btn btn-default" aria-label="Left Align">
+        <i class="fa fa-heart" style="color:#A30F00;"></i>
+      </button>
+      <button type="button" class="btn btn-default" aria-label="Left Align">
+        <i class="fa fa-comment" style="color:#337ab7;"></i>
+      </button>
+      <audio src="/boa-puerco.mp3" id="myTune"></audio>
+    </div>
+  </footer>
+</template>
+
+<template name="banda">
+<div class="col-sm-12 thumbnail">
+  <div class="col-sm-5 ">
+    <img class="img-responsive " src="/boa.jpg" >
+  </div>
+
+  <div class="col-sm-7">
+    <p style="color:black;" class="text-center">
+      Formados a mediados del 2000 en Santiago de Chile, esta banda apareció en la escena con la firme intención de renovar la forma de enfrentar el thrash metal. Gerhard Wolleter (guitarras) es la mente creativa del proyecto, y junto al bajista y vocalista Gustavo "Caballo" Romero, comenzaron a pavimentar el futuro de la banda, algo bastante auspicioso ya que a meses de formarse ya estaban considerados dentro de la banda sonora de la película de terror chilena, "Ángel Negro". Con el tema 'Puerco', la banda comenzó a darse a conocer en el medio, consiguiendo un contrato con la independiente Bolchevique Records para trabajar en su primer disco.
+    </p>
+
+    <button class="btn btn-default btn-lg" type="submit"><i class="fa fa-thumbs-up"></i></button>
+    <button class="btn btn-default" type="submit">Button</button>
+    <button class="btn btn-default" type="submit">Button</button>
+    <button class="btn btn-default" type="submit">Button</button>
+  </div>
+  <div class="col-sm-3"></div>
+  </div>
+    <p style="color:black;">Visita la pagina <a href="../sticky-footer">BOA</a> </p>
+
+
+<!--   <div class="row">
+    <div class="col-sm-5">
+      <div class="thumbnail">
+        <img class="img-responsive " src="/boa.jpg" >
+          <h3 class="banda-titulo">BOA</h3>
+        
+        <div class="caption">
+            <p style="color:black;">
+              Formados a mediados del 2000 en Santiago de Chile, esta banda apareció en la escena con la firme intención de renovar la forma de enfrentar el thrash metal. Gerhard Wolleter (guitarras) es la mente creativa del proyecto, y junto al bajista y vocalista Gustavo "Caballo" Romero, comenzaron a pavimentar el futuro de la banda, algo bastante auspicioso ya que a meses de formarse ya estaban considerados dentro de la banda sonora de la película de terror chilena, "Ángel Negro". Con el tema 'Puerco', la banda comenzó a darse a conocer en el medio, consiguiendo un contrato con la independiente Bolchevique Records para trabajar en su primer disco.
+            </p>
+            <p style="color:black;">Visita la pagina <a href="../sticky-footer">BOA</a> </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</template>
+
+<!-- 
+BOA 
+HUIJA 
+BUSHIDO 
+BAJOXTIERRA 
+REIGN OF EVIL 
+BETRAYAL DEVOURS COWARDS 
+SMOKING SABBATH 
+MACHETE 
+KLERIGO -->
